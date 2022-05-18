@@ -2,7 +2,7 @@ function Header() {
     return (
         <header>
             <h1>Bois</h1>
-            <h2>vintage furniture</h2>
+            <p>vintage furniture</p>
         </header>
     )
 }

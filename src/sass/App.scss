@@ -1,0 +1,36 @@
+$color-primary: rgb(137, 177, 137);
+$color-light: rgb(244, 238, 238);
+$font-color-dark: rgb(34, 34, 34);
+$ff-header: Helvetica, Arial, sans-serif;
+$ff-text: 'Comfortaa', cursive;
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: $font-color-dark;
+    background-color: $color-light;
+    font-family: $ff-text;
+}
+
+header {
+    background-color: $color-primary;
+    margin: 0;
+    padding: 3em 0;
+    color: $color-light;
+    font-family: $ff-header;
+    h1 {
+        font-size: 98px;
+        font-weight: 300;
+        margin: 0;
+    }
+    p {
+        margin: 0;
+        font-size: 22px;
+        font-weight: 400;
+    }
+}
+
