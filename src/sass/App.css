@@ -6,24 +6,27 @@ html {
   margin: 0;
   box-sizing: border-box;
   color: rgb(34, 34, 34);
-  background-color: rgb(244, 238, 238);
-  font-family: "Comfortaa", cursive;
+  background-color: rgb(240, 238, 238);
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 header {
-  background-color: rgb(137, 177, 137);
+  background-color: rgb(152, 188, 152);
   margin: 0;
-  padding: 3em 0;
-  color: rgb(244, 238, 238);
-  font-family: Helvetica, Arial, sans-serif;
+  padding: 2rem 0;
+  color: rgb(240, 238, 238);
+  font-family: "Comfortaa", cursive;
+  text-transform: uppercase;
+  text-align: center;
+  display: grid;
 }
 header h1 {
-  font-size: 98px;
+  font-size: 8rem;
   font-weight: 300;
   margin: 0;
 }
-header p {
+header .subtitle {
   margin: 0;
-  font-size: 22px;
+  font-size: 1.75rem;
   font-weight: 400;
 }/*# sourceMappingURL=App.css.map */

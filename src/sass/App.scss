@@ -1,8 +1,12 @@
-$color-primary: rgb(137, 177, 137);
-$color-light: rgb(244, 238, 238);
+$color-primary: rgb(152, 188, 152);
+$color-light: rgb(240, 238, 238);
 $font-color-dark: rgb(34, 34, 34);
-$ff-header: Helvetica, Arial, sans-serif;
-$ff-text: 'Comfortaa', cursive;
+$ff-header: 'Comfortaa', cursive; 
+$ff-text: Helvetica, Arial, sans-serif;
+
+@mixin grid {
+    display: grid;
+}
 
 body,
 html {
@@ -19,17 +23,21 @@ html {
 header {
     background-color: $color-primary;
     margin: 0;
-    padding: 3em 0;
+    padding: 2rem 0;
     color: $color-light;
-    font-family: $ff-header;
+    font-family: 'Comfortaa', cursive; 
+    text-transform: uppercase;
+    text-align: center;
+    @include grid();
+
     h1 {
-        font-size: 98px;
+        font-size: 8rem;
         font-weight: 300;
         margin: 0;
     }
-    p {
+    .subtitle {
         margin: 0;
-        font-size: 22px;
+        font-size: 1.75rem;
         font-weight: 400;
     }
 }
