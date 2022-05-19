@@ -4,8 +4,13 @@ $font-color-dark: rgb(34, 34, 34);
 $ff-header: 'Comfortaa', cursive; 
 $ff-text: Helvetica, Arial, sans-serif;
 
-@mixin grid {
+@mixin gridCenter{
     display: grid;
+    justify-content: center;
+}
+
+@mixin flex {
+    display: flex;
 }
 
 body,
@@ -23,13 +28,14 @@ html {
 header {
     background-color: $color-primary;
     margin: 0;
-    padding: 2rem 0;
+    padding: 1rem 0;
     color: $color-light;
     font-family: 'Comfortaa', cursive; 
     text-transform: uppercase;
     text-align: center;
-    @include grid();
-
+    @include gridCenter();
+    grid-template-columns: 10% 70% 10%;
+    gap: 1rem;
     h1 {
         font-size: 8rem;
         font-weight: 300;
@@ -39,6 +45,17 @@ header {
         margin: 0;
         font-size: 1.75rem;
         font-weight: 400;
+    }
+    .header__icon {
+        .header__icon-foreground {
+            fill: $color-primary;
+        }
+        .header__icon-background {
+            fill: $color-light;
+        }
+    }
+    .header__grid-element {
+        border: solid red;
     }
 }
 
