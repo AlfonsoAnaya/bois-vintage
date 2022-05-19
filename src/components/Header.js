@@ -1,10 +1,10 @@
 function Header() {
     return (
         <header>
-            <div className="header__grid-element">
-                <span>CDMX Roma Sur</span>
+            <div className="grid-element container-contact">
+                <span className="location">CDMX Roma Sur</span>
                 <svg
-                    className="header__icon"
+                    className="icon icon-WA"
                     version="1.1"
                     id="Capa_1"
                     xmlns="http://www.w3.org/2000/svg"
@@ -54,16 +54,16 @@ function Header() {
                     </g>
                 </svg>
 
-                <span>55-3774-6078</span>
-                <span>55-1030-4245</span>
+                <span className="phone1">55-3774-6078</span>
+                <span className="phone2">55-1030-4245</span>
             </div>
-            <div className="header__grid-element">
+            <div className="grid-element">
                 <h1>Bois</h1>
                 <p className="subtitle">vintage furniture</p>
             </div>
-            <div className="header__grid-element">
+            <div className="grid-element container-insta">
                 <svg
-                    className="header__icon"
+                    className="icon icon-insta"
                     version="1.1"
                     id="Layer_1"
                     xmlns="http://www.w3.org/2000/svg"

@@ -13,32 +13,66 @@ html {
 header {
   background-color: rgb(152, 188, 152);
   margin: 0;
-  padding: 1rem 0;
+  padding: 2.5rem 2rem 0.75rem 2rem;
   color: rgb(240, 238, 238);
   font-family: "Comfortaa", cursive;
   text-transform: uppercase;
-  text-align: center;
+  margin: 0 auto;
   display: grid;
   justify-content: center;
-  grid-template-columns: 10% 70% 10%;
-  gap: 1rem;
+  justify-content: center;
+  grid-template-columns: minmax(100px, 200px) minmax(400px, 70%) minmax(100px, 200px);
+  gap: 0.5rem;
+  align-items: end;
 }
 header h1 {
   font-size: 8rem;
   font-weight: 300;
   margin: 0;
+  text-align: center;
+  line-height: 0.7;
 }
 header .subtitle {
   margin: 0;
   font-size: 1.75rem;
   font-weight: 400;
+  text-align: center;
 }
-header .header__icon .header__icon-foreground {
+header .container-contact {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 1.1rem;
+  margin: 0 auto;
+  display: grid;
+  justify-content: center;
+  min-height: 4rem;
+  grid-template-columns: minmax(2.75rem, 25%) 75%;
+  grid-template-rows: 35% 30% 30%;
+  grid-template-areas: "location location" "icon phone1" "icon phone2";
+}
+header .container-contact .location {
+  grid-area: location;
+}
+header .container-contact .icon-WA {
+  grid-area: icon;
+  width: 2.5rem;
+  align-self: center;
+}
+header .container-contact .phone1 {
+  grid-area: phone1;
+}
+header .container-contact .phone2 {
+  grid-area: phone2;
+}
+header .container-insta {
+  text-align: right;
+}
+header .container-insta .icon-insta {
+  width: 3.75rem;
+}
+header .icon .header__icon-foreground {
   fill: rgb(152, 188, 152);
 }
-header .header__icon .header__icon-background {
+header .icon .header__icon-background {
   fill: rgb(240, 238, 238);
-}
-header .header__grid-element {
-  border: solid red;
 }/*# sourceMappingURL=App.css.map */

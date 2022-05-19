@@ -4,7 +4,8 @@ $font-color-dark: rgb(34, 34, 34);
 $ff-header: 'Comfortaa', cursive; 
 $ff-text: Helvetica, Arial, sans-serif;
 
-@mixin gridCenter{
+@mixin grid(){
+    margin: 0 auto;
     display: grid;
     justify-content: center;
 }
@@ -28,34 +29,69 @@ html {
 header {
     background-color: $color-primary;
     margin: 0;
-    padding: 1rem 0;
+    padding: 2.5rem 2rem .75rem 2rem;
     color: $color-light;
     font-family: 'Comfortaa', cursive; 
     text-transform: uppercase;
-    text-align: center;
-    @include gridCenter();
-    grid-template-columns: 10% 70% 10%;
-    gap: 1rem;
+    @include grid();
+    justify-content:center;
+    grid-template-columns: minmax(100px, 200px) minmax(400px, 70%) minmax(100px, 200px);
+    gap: .5rem;
+    align-items: end;
     h1 {
         font-size: 8rem;
         font-weight: 300;
         margin: 0;
+        text-align: center;
+        line-height: .7;
+        
     }
     .subtitle {
         margin: 0;
         font-size: 1.75rem;
         font-weight: 400;
+        text-align: center;
     }
-    .header__icon {
+    .container-contact {
+        font-family: $ff-text;
+        font-weight: 300;
+        font-size: 1.1rem;
+        @include grid();
+        min-height:4rem;
+        grid-template-columns: minmax(2.75rem, 25%) 75%;
+        grid-template-rows:35% 30% 30%;
+        grid-template-areas: 
+           "location location"
+           "icon phone1"
+           "icon phone2";
+        .location {
+            grid-area: location;
+        }
+        .icon-WA {
+            grid-area: icon;
+            width: 2.5rem;
+            align-self: center;
+        }
+        .phone1 {
+            grid-area: phone1;
+        }
+        .phone2 {
+            grid-area: phone2;
+        }
+    }
+    .container-insta {
+        text-align: right;
+        .icon-insta {
+            width: 3.75rem;
+        }
+    }
+    .icon {
         .header__icon-foreground {
             fill: $color-primary;
         }
         .header__icon-background {
             fill: $color-light;
         }
-    }
-    .header__grid-element {
-        border: solid red;
     }
 }
 
