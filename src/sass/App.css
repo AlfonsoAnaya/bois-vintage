@@ -1,3 +1,8 @@
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
 body,
 html {
   height: 100%;
@@ -8,6 +13,11 @@ html {
   color: #404a3f;
   background-color: rgb(240, 238, 238);
   font-family: Helvetica, sans-serif;
+}
+
+img {
+  display: block;
+  width: 100%;
 }
 
 header {
@@ -113,7 +123,6 @@ header .icon .header__icon-background {
 }
 .products-grid .card-wrapper img {
   width: 100%;
-  display: block;
   -o-object-fit: cover;
      object-fit: cover;
   opacity: 1;
@@ -129,10 +138,85 @@ header .icon .header__icon-background {
   opacity: 1;
 }
 
+.product-container {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  max-width: 1050px;
+  width: 85%;
+  border: solid red;
+}
+.product-container .gallery {
+  width: 65%;
+}
+.product-container .product-details {
+  font-family: "Comfortaa", cursive;
+  width: 35%;
+  padding: 0 0.5rem 0 2rem;
+  align-self: center;
+}
+.product-container .product-details h2 {
+  text-transform: capitalize;
+  font-size: 1.8rem;
+}
+.product-container .product-details p {
+  font-size: 1.15rem;
+  font-weight: 300;
+}
+.product-container .product-details .contact-p {
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+
 footer {
   margin-top: 5rem;
   text-align: center;
   color: rgb(240, 238, 238);
-  height: 5em;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   background-color: rgb(152, 188, 152);
+  text-align: left;
+}
+footer .footer-flex-container {
+  margin: 0 auto;
+  padding: 2em 0 1em 0;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1000px;
+  gap: 1em;
+  align-items: flex-start;
+  justify-content: space-around;
+  border: solid blue;
+}
+footer .footer-flex-container h2 {
+  font-family: "Comfortaa", cursive;
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 300;
+  margin: 0;
+  line-height: 0.7;
+  text-align: center;
+}
+footer .footer-flex-container .subtitle {
+  text-align: center;
+  font-family: "Comfortaa", cursive;
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 0.86rem;
+  font-weight: 400;
+}
+footer .footer-flex-item {
+  width: 45%;
+  border: solid red;
+}
+footer .hours-flex-container {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  width: 150px;
+  justify-self: left;
+  border: coral solid;
 }/*# sourceMappingURL=App.css.map */

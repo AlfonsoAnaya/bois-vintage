@@ -1,3 +1,5 @@
+import {Link} from "react-router-dom"
+
 function Header() {
     return (
         <header>
@@ -57,11 +59,14 @@ function Header() {
                 <span className="phone1">55-3774-6078</span>
                 <span className="phone2">55-1030-4245</span>
             </div>
-            <div className="grid-element">
-                <h1>Bois</h1>
-                <p className="subtitle">vintage furniture</p>
-            </div>
+            <Link className="link" to="/">
+                <div className="grid-element">
+                    <h1>Bois</h1>
+                    <p className="subtitle">vintage furniture</p>
+                </div>
+            </Link>
             <div className="grid-element container-insta">
+                <a href="https://www.instagram.com/bois_vintage/" rel="noreferrer" target="_blank">
                 <svg
                     className="icon icon-insta"
                     version="1.1"
@@ -116,6 +121,8 @@ function Header() {
                     <g>
                     </g>
                 </svg>
+                </a>
+
             </div>
 
         </header>

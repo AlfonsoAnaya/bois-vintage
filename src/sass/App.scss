@@ -11,8 +11,21 @@ $ff-text: Helvetica, sans-serif;
     justify-content: center;
 }
 
-@mixin flex {
+@mixin flex-row {
     display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
 }
 
 body,
@@ -25,6 +38,11 @@ html {
     color: $font-color-dark;
     background-color: $color-light;
     font-family: $ff-text;
+}
+
+img {
+    display: block;
+    width: 100%;
 }
 
 header {
@@ -128,7 +146,6 @@ header {
         }
         img {
             width: 100%;
-            display: block;
             object-fit: cover;
             opacity: 1;
             backface-visibility: hidden;
@@ -148,10 +165,78 @@ header {
     }
 }
 
+.product-container {
+    @include flex-row;
+    max-width: 1050px;
+    width: 85%;
+    border: solid red;
+    .gallery {
+        width: 65%;
+        
+    }
+    .product-details {
+        font-family: $ff-header;
+        width: 35%;
+        padding: 0 .5rem 0 2rem;
+        align-self: center;
+        h2 {
+            text-transform: capitalize;
+            font-size: 1.8rem;
+        }
+        p {
+            font-size: 1.15rem;
+            font-weight: 300;
+        }
+        .contact-p {
+            margin-top: 2rem;
+            font-size: 1rem;
+        }
+    }
+}
+
 footer {
     margin-top: 5rem;
     text-align: center;
     color: $color-light;
-    height: 5em;
+    height: fit-content;
     background-color: $color-primary;
+    text-align: left;
+    .footer-flex-container {
+        margin: 0 auto;
+        padding: 2em 0 1em 0;
+        @include flex-row();   
+        width: 90%;
+        max-width: 1000px;
+        gap: 1em;
+        align-items: flex-start;
+        justify-content: space-around;
+        border: solid blue;
+        h2 {
+            font-family: $ff-header;
+            text-transform: uppercase;
+            font-size: 4rem;
+            font-weight: 300;
+            margin: 0;
+            line-height: .7;
+            text-align: center;
+        }
+        .subtitle {
+            text-align: center;
+            font-family: $ff-header;
+            text-transform: uppercase;
+            margin: 0;
+            font-size: .86rem;
+            font-weight: 400;
+        }
+    }
+    .footer-flex-item {
+        width: 45%;
+        border: solid red;
+    }
+    .hours-flex-container {
+        @include flex-row();
+        width: 150px;
+        justify-self: left;
+        border: coral solid;
+    }
 }
