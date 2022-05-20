@@ -1,8 +1,9 @@
 $color-primary: rgb(152, 188, 152);
+$color-overlay: rgb(152, 188, 152, .6);
 $color-light: rgb(240, 238, 238);
-$font-color-dark: rgb(34, 34, 34);
+$font-color-dark: #404a3f;
 $ff-header: 'Comfortaa', cursive; 
-$ff-text: Helvetica, Arial, sans-serif;
+$ff-text: Helvetica, sans-serif;
 
 @mixin grid(){
     margin: 0 auto;
@@ -38,6 +39,7 @@ header {
     grid-template-columns: minmax(100px, 200px) minmax(400px, 70%) minmax(100px, 200px);
     gap: .5rem;
     align-items: end;
+    margin-bottom: 3rem;
     h1 {
         font-size: 8rem;
         font-weight: 300;
@@ -59,7 +61,7 @@ header {
         @include grid();
         min-height:4rem;
         grid-template-columns: minmax(2.75rem, 25%) 75%;
-        grid-template-rows:35% 30% 30%;
+        grid-template-rows:40% 30% 30%;
         grid-template-areas: 
            "location location"
            "icon phone1"
@@ -69,7 +71,7 @@ header {
         }
         .icon-WA {
             grid-area: icon;
-            width: 2.5rem;
+            width: 2.25rem;
             align-self: center;
         }
         .phone1 {
@@ -82,7 +84,7 @@ header {
     .container-insta {
         text-align: right;
         .icon-insta {
-            width: 3.75rem;
+            width: 3.25rem;
         }
     }
     .icon {
@@ -95,3 +97,61 @@ header {
     }
 }
 
+.products-grid {
+    @include grid();
+    max-width: 1200px;
+    width: 90%;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
+    gap: 1.75rem;
+    text-transform: uppercase;
+    .card-wrapper {
+        border-radius: .25em;
+        width: 100%;
+        background-color: $color-overlay;
+        overflow: hidden;
+        position: relative;
+        .info-container {
+            width: 95%;
+            transition: 0.5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            h3, p {
+                text-align: center;
+                font-weight: 300;
+                font-size: 1.35rem;
+                margin: 0;
+            }
+        }
+        img {
+            width: 100%;
+            display: block;
+            object-fit: cover;
+            opacity: 1;
+            backface-visibility: hidden;
+            transition: transform 
+                750ms cubic-bezier(0.5, 0, 0.5, 1), 
+                opacity 250ms linear;
+        }
+    }
+    .card-wrapper:hover {
+        img {
+            opacity: 0.15;
+            transform: scale(1.2);
+        }
+        .info-container {
+            opacity: 1;
+        }
+    }
+}
+
+footer {
+    margin-top: 5rem;
+    text-align: center;
+    color: $color-light;
+    height: 5em;
+    background-color: $color-primary;
+}

@@ -1,8 +1,8 @@
 function Footer() {
     return (
-        <div>
+        <footer>
             <span>Icons by <a className="link" href="https://www.svgrepo.com/">svgrepo</a>.</span>
-        </div>
+        </footer>
     )
 }
 

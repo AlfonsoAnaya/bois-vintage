@@ -1,8 +1,11 @@
-function Card({ product: { title, image, alt } }) {
+function Card({ product: {title, thumb, alt, price} }) {
     return (
         <article className="card-wrapper">
-            <h3>{title}</h3>
-            <img src={image} alt={`un mueble vintage ${alt}`} />  
+            <img src={thumb} alt={`un mueble vintage ${alt}`} />  
+            <div className="info-container">
+                <h3>{title}</h3>
+                <p>{price}</p>
+            </div>
         </article>
     )
 

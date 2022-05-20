@@ -5,9 +5,9 @@ html {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: rgb(34, 34, 34);
+  color: #404a3f;
   background-color: rgb(240, 238, 238);
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Helvetica, sans-serif;
 }
 
 header {
@@ -24,6 +24,7 @@ header {
   grid-template-columns: minmax(100px, 200px) minmax(400px, 70%) minmax(100px, 200px);
   gap: 0.5rem;
   align-items: end;
+  margin-bottom: 3rem;
 }
 header h1 {
   font-size: 8rem;
@@ -39,7 +40,7 @@ header .subtitle {
   text-align: center;
 }
 header .container-contact {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Helvetica, sans-serif;
   font-weight: 300;
   font-size: 1.1rem;
   margin: 0 auto;
@@ -47,7 +48,7 @@ header .container-contact {
   justify-content: center;
   min-height: 4rem;
   grid-template-columns: minmax(2.75rem, 25%) 75%;
-  grid-template-rows: 35% 30% 30%;
+  grid-template-rows: 40% 30% 30%;
   grid-template-areas: "location location" "icon phone1" "icon phone2";
 }
 header .container-contact .location {
@@ -55,7 +56,7 @@ header .container-contact .location {
 }
 header .container-contact .icon-WA {
   grid-area: icon;
-  width: 2.5rem;
+  width: 2.25rem;
   align-self: center;
 }
 header .container-contact .phone1 {
@@ -68,11 +69,70 @@ header .container-insta {
   text-align: right;
 }
 header .container-insta .icon-insta {
-  width: 3.75rem;
+  width: 3.25rem;
 }
 header .icon .header__icon-foreground {
   fill: rgb(152, 188, 152);
 }
 header .icon .header__icon-background {
   fill: rgb(240, 238, 238);
+}
+
+.products-grid {
+  margin: 0 auto;
+  display: grid;
+  justify-content: center;
+  max-width: 1200px;
+  width: 90%;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
+  gap: 1.75rem;
+  text-transform: uppercase;
+}
+.products-grid .card-wrapper {
+  border-radius: 0.25em;
+  width: 100%;
+  background-color: rgba(152, 188, 152, 0.6);
+  overflow: hidden;
+  position: relative;
+}
+.products-grid .card-wrapper .info-container {
+  width: 95%;
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.products-grid .card-wrapper .info-container h3, .products-grid .card-wrapper .info-container p {
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.35rem;
+  margin: 0;
+}
+.products-grid .card-wrapper img {
+  width: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 1;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
+}
+.products-grid .card-wrapper:hover img {
+  opacity: 0.15;
+  transform: scale(1.2);
+}
+.products-grid .card-wrapper:hover .info-container {
+  opacity: 1;
+}
+
+footer {
+  margin-top: 5rem;
+  text-align: center;
+  color: rgb(240, 238, 238);
+  height: 5em;
+  background-color: rgb(152, 188, 152);
 }/*# sourceMappingURL=App.css.map */
