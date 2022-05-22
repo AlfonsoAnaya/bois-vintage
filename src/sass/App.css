@@ -177,6 +177,10 @@ footer {
   height: fit-content;
   background-color: rgb(152, 188, 152);
   text-align: left;
+  padding-bottom: 1rem;
+}
+footer p {
+  margin: 0.3rem 0 0.6rem 0;
 }
 footer .footer-flex-container {
   margin: 0 auto;
@@ -185,11 +189,10 @@ footer .footer-flex-container {
   flex-direction: row;
   margin: 0 auto;
   width: 90%;
-  max-width: 1000px;
+  max-width: 800px;
   gap: 1em;
   align-items: flex-start;
   justify-content: space-around;
-  border: solid blue;
 }
 footer .footer-flex-container h2 {
   font-family: "Comfortaa", cursive;
@@ -198,7 +201,6 @@ footer .footer-flex-container h2 {
   font-weight: 300;
   margin: 0;
   line-height: 0.7;
-  text-align: center;
 }
 footer .footer-flex-container .subtitle {
   text-align: center;
@@ -208,15 +210,55 @@ footer .footer-flex-container .subtitle {
   font-size: 0.86rem;
   font-weight: 400;
 }
+footer .footer-flex-container .footer-para {
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+footer .footer-flex-container .footer-uppercase {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  opacity: 0.75;
+  margin: 0;
+  font-weight: 500;
+}
+footer .footer-contact-info {
+  margin: 0;
+  font-size: 0.75rem;
+}
+footer .footer-flex-container2 {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  gap: 2rem;
+}
 footer .footer-flex-item {
-  width: 45%;
-  border: solid red;
+  width: 48%;
+}
+footer .hours-title {
+  text-transform: uppercase;
+}
+footer .hours-subtitle {
+  font-size: 0.9rem;
+  font-weight: 300;
 }
 footer .hours-flex-container {
   display: flex;
   flex-direction: row;
-  margin: 0 auto;
-  width: 150px;
+  width: 120px;
   justify-self: left;
-  border: coral solid;
+  justify-content: space-between;
+  font-size: 0.95rem;
+}
+footer .hours-flex-container p {
+  margin: 0;
+}
+footer .hours-flex-container .bold {
+  font-weight: 400;
+}
+footer h5, footer .credits {
+  margin: 0;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
 }/*# sourceMappingURL=App.css.map */

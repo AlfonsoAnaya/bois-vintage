@@ -201,16 +201,19 @@ footer {
     height: fit-content;
     background-color: $color-primary;
     text-align: left;
+    padding-bottom: 1rem;
+    p {
+        margin: .3rem 0 .6rem 0;
+    }
     .footer-flex-container {
         margin: 0 auto;
         padding: 2em 0 1em 0;
         @include flex-row();   
         width: 90%;
-        max-width: 1000px;
+        max-width: 800px;
         gap: 1em;
         align-items: flex-start;
         justify-content: space-around;
-        border: solid blue;
         h2 {
             font-family: $ff-header;
             text-transform: uppercase;
@@ -218,7 +221,6 @@ footer {
             font-weight: 300;
             margin: 0;
             line-height: .7;
-            text-align: center;
         }
         .subtitle {
             text-align: center;
@@ -228,15 +230,55 @@ footer {
             font-size: .86rem;
             font-weight: 400;
         }
-    }
+        .footer-para {
+            font-weight: 300;
+            font-size: .9rem;
+        }
+        .footer-uppercase {
+            text-transform: uppercase;
+            font-size: .75rem;
+            opacity: .75;
+            margin: 0;
+            font-weight: 500;
+        }
+        }
+        .footer-contact-info {
+            margin: 0;
+            font-size: .75rem;
+        }
+        .footer-flex-container2 {
+            @include flex-row();
+            gap: 2rem;
+        }
     .footer-flex-item {
-        width: 45%;
-        border: solid red;
+        width: 48%;
+    }
+    .hours-title {
+        text-transform: uppercase;
+    }
+    .hours-subtitle {
+        font-size: .9rem;
+        font-weight: 300;
     }
     .hours-flex-container {
-        @include flex-row();
-        width: 150px;
+        display: flex;
+        flex-direction: row;
+        width: 120px;
         justify-self: left;
-        border: coral solid;
+        justify-content: space-between;
+        font-size: .95rem;
+        p {
+            margin: 0;
+        }
+        .bold {
+            font-weight: 400;
+        }
+    }
+    h5, .credits {
+        margin: 0;
+        text-align: center;
+        font-family: $ff-text;
+        font-size: 1rem;
+        font-weight: 400;
     }
 }

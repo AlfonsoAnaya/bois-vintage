@@ -10,19 +10,19 @@ function Footer() {
                     <p className="footer-para">Rescatamos muebles antiguos y les damos nueva vida. 
                     Si te interesa alguno de nuestros productos escríbenos un DM.
                     </p>
+                    <div className="footer-flex-container2">
                     <p className="middle-footer-para">
                         <span className="footer-uppercase">Dirección</span><br></br>
                         <span className="footer-contact-info">Insurgentes Sur 420, CDMX, México</span>
                     </p>
-                    <div className="footer-flex-container2">
-                        <p><span className="footer-uppercase">Teléfono</span><br></br>
-                            <span className="footer-contact-info">+(52)55-3774-6078</span>
+                    <p><span className="footer-uppercase">Teléfono</span><br></br>
+                        <span className="footer-contact-info">+(52)55-3774-6078</span>
                         </p>
                     </div>
                 </div>
                 <div className="footer-flex-item">
-                    <h5 className="hours-title">Opening hours</h5>
-                    <h6 className="hours-subtitle">Walk-ins are welcome. Arrange a meeting to avoid excessive waiting times</h6>
+                    <h5 className="hours-title">Horario</h5>
+                    <p className="hours-subtitle">Antes de visitarnos, solicita una cita por Whatsapp o llámanos por teléfono</p>
                     <div className="hours-flex-container">
                         <div>
                             <p className="day">Mon:</p>
@@ -41,11 +41,10 @@ function Footer() {
                     </div>
                 </div>
             </div>
-            <h5 className="credit">Website by:
-                <a className="link-footer" rel="noreferrer" target="_blank" href="https://ubiquitous-frangipane-e02795.netlify.app/">Alfonso Anaya</a>
+            <h5 >Website by <a className="link" rel="noreferrer" target="_blank" href="https://ubiquitous-frangipane-e02795.netlify.app/">Alfonso Anaya</a>
             </h5>
 
-            <span>Icons by <a classNameName="link" href="https://www.svgrepo.com/">svgrepo</a>.</span>
+            <p className="credits">Icons by <a className="link" href="https://www.svgrepo.com/">svgrepo</a>.</p>
         </footer>
     )
 }
