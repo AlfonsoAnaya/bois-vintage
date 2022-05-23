@@ -144,7 +144,6 @@ header .icon .header__icon-background {
   margin: 0 auto;
   max-width: 1050px;
   width: 85%;
-  border: solid red;
 }
 .product-container .gallery {
   width: 65%;
@@ -235,6 +234,7 @@ footer .footer-flex-item {
 }
 footer .hours-title {
   text-transform: uppercase;
+  font-weight: 400;
 }
 footer .hours-subtitle {
   font-size: 0.9rem;

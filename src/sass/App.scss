@@ -169,7 +169,6 @@ header {
     @include flex-row;
     max-width: 1050px;
     width: 85%;
-    border: solid red;
     .gallery {
         width: 65%;
         
@@ -256,6 +255,7 @@ footer {
     }
     .hours-title {
         text-transform: uppercase;
+        font-weight: 400;
     }
     .hours-subtitle {
         font-size: .9rem;

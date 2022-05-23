@@ -7,7 +7,7 @@ function IndividualProduct() {
     return (
         <div className="product-container">
             <div className="gallery">
-            <img src={current.thumb} alt={current.description}/>
+            <img src={current.gallery} alt={current.description}/>
             </div>
             <div className="product-details">
                 <h2>{current.title}</h2>
