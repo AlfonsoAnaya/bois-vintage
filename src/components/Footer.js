@@ -41,10 +41,10 @@ function Footer() {
                     </div>
                 </div>
             </div>
-            <h5 >Website by <a className="link" rel="noreferrer" target="_blank" href="https://ubiquitous-frangipane-e02795.netlify.app/">Alfonso Anaya</a>
-            </h5>
+            <p className="credits">Website by <a className="footer-link" rel="noreferrer" target="_blank" href="https://ubiquitous-frangipane-e02795.netlify.app/">Alfonso Anaya</a>
+            </p>
 
-            <p className="credits">Icons by <a className="link" href="https://www.svgrepo.com/">svgrepo</a>.</p>
+            <p className="credits">Icons by <a className="footer-link" rel="noreferrer" target="_blank" href="https://www.svgrepo.com/">svgrepo</a></p>
         </footer>
     )
 }

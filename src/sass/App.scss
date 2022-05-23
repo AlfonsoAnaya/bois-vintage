@@ -196,13 +196,14 @@ header {
 
 footer {
     margin-top: 5rem;
-    text-align: center;
     color: $color-light;
-    height: fit-content;
     background-color: $color-primary;
     text-align: left;
     padding-bottom: 1rem;
     p {
+        margin: .3rem 0 0rem 0;
+    }
+    .hours-subtitle {
         margin: .3rem 0 .6rem 0;
     }
     .footer-flex-container {
@@ -276,9 +277,19 @@ footer {
     }
     h5, .credits {
         margin: 0;
+        font-weight: 300;
+    }
+    .credits {
         text-align: center;
-        font-family: $ff-text;
-        font-size: 1rem;
-        font-weight: 400;
+        margin-top: .15rem;
+        font-size: .9rem;
+    }
+    a {
+        color: $color-light;
+        text-decoration: underline $color-light;
+    }
+    a:hover {
+        color: $font-color-dark;
+        text-decoration: none;
     }
 }

@@ -170,16 +170,15 @@ header .icon .header__icon-background {
 
 footer {
   margin-top: 5rem;
-  text-align: center;
   color: rgb(240, 238, 238);
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
   background-color: rgb(152, 188, 152);
   text-align: left;
   padding-bottom: 1rem;
 }
 footer p {
+  margin: 0.3rem 0 0rem 0;
+}
+footer .hours-subtitle {
   margin: 0.3rem 0 0.6rem 0;
 }
 footer .footer-flex-container {
@@ -257,8 +256,19 @@ footer .hours-flex-container .bold {
 }
 footer h5, footer .credits {
   margin: 0;
+  font-weight: 300;
+}
+footer .credits {
   text-align: center;
-  font-family: Helvetica, sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
+  margin-top: 0.15rem;
+  font-size: 0.9rem;
+}
+footer a {
+  color: rgb(240, 238, 238);
+  -webkit-text-decoration: underline rgb(240, 238, 238);
+          text-decoration: underline rgb(240, 238, 238);
+}
+footer a:hover {
+  color: #404a3f;
+  text-decoration: none;
 }/*# sourceMappingURL=App.css.map */
