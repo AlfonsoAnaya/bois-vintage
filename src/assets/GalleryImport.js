@@ -1,18 +1,23 @@
-let GALLERIES = {
-    gallery1: {},
-    gallery2: {},
-    gallery3: {},
-    gallery4: {},
-    gallery5: {},
-    gallery6: {},
-    gallery7: {},
-    gallery8: {},
-}
+let totalProducts = 8
+let photosPerGallery = 6
 
-for (let i=1; i<9; i++) {
-    for(let j=1; j>7; i++) {
-        GALLERIES[`gallery${i}`] = {...GALLERIES[`gallery${i}`], [`img${j}`]: require(`../assets/${i}/${j}.jpg`)}
+let GalleriesArr = [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+
+for (let i=1; i<= totalProducts; i++) {
+    for(let j=1; j<= photosPerGallery; j++) {
+        GalleriesArr[i-1] = [...GalleriesArr[i-1], require(`../assets/${i}/${j}.jpg`)]
     }
 }
 
-export default GALLERIES
+console.log(GalleriesArr)
+
+export default GalleriesArr

@@ -1,108 +1,102 @@
-import THUMBS from "../assets/ThumbsImport.js"
-import GALLERY from "../assets/GalleryImport.js"
-let NewThumbs = []
-let NewGallery = []
-
-
-for (let i=1; i<9; i++) {
-    const newThumb = THUMBS[`thumb${i}`]
-    NewThumbs = [...NewThumbs, newThumb]
-}
-for (let i=1; i<9; i++) {
-    const newPhoto = GALLERY[`gallery${i}`]
-    NewGallery = [...NewGallery, newPhoto]
-}
-
+import thumbsArr from "../assets/ThumbsImport.js"
+import GalleriesArr from "../assets/GalleryImport.js"
 
 let productsArr = [
     {   
         id: 1,
         title: "silla de comedor mid-century",
         alt: "silla de madera",
-        thumb: [NewThumbs[0]],
+        thumb: [thumbsArr[0]],
         price: "$1,400 MXN",
         style: "escandinavo",
         materials: "madera maciza (cedro), asiento tapizado en tela y patas de bronce",
         year: "circa 1960",
         measurements: "94cm (altura) 43cm (altura al asiento) 44cm (profundidad y ancho)",
-        gallery: [NewGallery[0]],
+        gallery: GalleriesArr[0],
     },
     {   
         id: 2,
         title: "sillón ramírez vázquez",
         alt: "silla de madera",
-        thumb: [NewThumbs[1]],
+        thumb: [thumbsArr[1]],
         price: "6,990 MXN",
         style: "escandinavo",
         materials: "madera maciza (cedro), asiento tapizado en tela y patas de bronce",
         year: "circa 1960",
         measurements: "94cm (altura) 43cm (altura al asiento) 44cm (profundidad y ancho)",
+        gallery: GalleriesArr[1],
     },
     {   
         id: 3,
         title: "mesa de centro mid-century",
         alt: "",
-        thumb: [NewThumbs[2]],
+        thumb: [thumbsArr[2]],
         price: "4,500 MXN",
         style: "escandinavo",
         materials: "madera maciza (cedro), asiento tapizado en tela y patas de bronce",
         year: "circa 1960",
         measurements: "94cm (altura) 43cm (altura al asiento) 44cm (profundidad y ancho)",
+        gallery: GalleriesArr[2],
     },
     {   
         id: 4,
         title: "mesa de noche dixy",
         alt: "silla de madera",
-        thumb: [NewThumbs[3]],
+        thumb: [thumbsArr[3]],
         price: "2,190 MXN",
         style: "escandinavo",
         materials: "madera maciza (cedro), asiento tapizado en tela y patas de bronce",
         year: "circa 1960",
         measurements: "94cm (altura) 43cm (altura al asiento) 44cm (profundidad y ancho)",
+        gallery: GalleriesArr[3],
     },
     {   
         id: 5,
         title: "mesa de noche dixy",
         alt: "silla de madera",
-        thumb: [NewThumbs[4]],
+        thumb: [thumbsArr[4]],
         price: "2,190 MXN",
         style: "escandinavo",
         materials: "madera maciza (cedro), asiento tapizado en tela y patas de bronce",
         year: "circa 1960",
         measurements: "94cm (altura) 43cm (altura al asiento) 44cm (profundidad y ancho)",
+        gallery: GalleriesArr[4],
     },
     {   
         id: 6,
         title: "mesa de noche dixy",
         alt: "silla de madera",
-        thumb: [NewThumbs[5]],
+        thumb: [thumbsArr[5]],
         price: "2,190 MXN",
         style: "escandinavo",
         materials: "madera maciza (cedro), asiento tapizado en tela y patas de bronce",
         year: "circa 1960",
         measurements: "94cm (altura) 43cm (altura al asiento) 44cm (profundidad y ancho)",
+        gallery: GalleriesArr[5],
     },
     {   
         id: 7,
         title: "mesa de noche dixy",
         alt: "silla de madera",
-        thumb: [NewThumbs[6]],
+        thumb: [thumbsArr[6]],
         price: "2,190 MXN",
         style: "escandinavo",
         materials: "madera maciza (cedro), asiento tapizado en tela y patas de bronce",
         year: "circa 1960",
         measurements: "94cm (altura) 43cm (altura al asiento) 44cm (profundidad y ancho)",
+        gallery: GalleriesArr[6],
     },
     {   
         id: 8,
         title: "mesa de noche dixy",
         alt: "silla de madera",
-        thumb: [NewThumbs[7]],
+        thumb: [thumbsArr[7]],
         price: "2,190 MXN",
         style: "escandinavo",
         materials: "madera maciza (cedro), asiento tapizado en tela y patas de bronce",
         year: "circa 1960",
         measurements: "94cm (altura) 43cm (altura al asiento) 44cm (profundidad y ancho)",
+        gallery: GalleriesArr[7],
     }
 ]
 
