@@ -18,6 +18,4 @@ for (let i=1; i<= totalProducts; i++) {
     }
 }
 
-console.log(GalleriesArr)
-
 export default GalleriesArr

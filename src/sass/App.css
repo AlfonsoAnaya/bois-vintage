@@ -147,6 +147,38 @@ header .icon .header__icon-background {
 }
 .product-container .gallery {
   width: 65%;
+  position: relative;
+}
+.product-container .gallery img {
+  width: 100%;
+  border-radius: 4px;
+}
+.product-container .gallery .btn {
+  font-family: "Comfortaa", cursive;
+  text-align: center;
+  color: #404a3f;
+  background-color: rgb(240, 238, 238);
+  position: absolute;
+  top: 87%;
+  border: none;
+  border-radius: 1.9rem;
+  border: solid #404a3f 2px;
+  padding: 0.8rem 1rem;
+  font-weight: 700;
+  font-size: 1.5em;
+  opacity: 0.3;
+}
+.product-container .gallery .btn-prev {
+  left: 0.3rem;
+}
+.product-container .gallery .btn-next {
+  right: 0.3rem;
+}
+.product-container .gallery .btn:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  background-color: #404a3f;
+  color: rgb(240, 238, 238);
 }
 .product-container .product-details {
   font-family: "Comfortaa", cursive;

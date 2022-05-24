@@ -171,7 +171,39 @@ header {
     width: 85%;
     .gallery {
         width: 65%;
+        position: relative;
+        img {
+            width: 100%;
+            border-radius: 4px;
+        }
+        .btn {
+            font-family: $ff-header;
+            text-align: center;
+            color: $font-color-dark;
+            background-color: $color-light;
+            position: absolute;
+            top: 87%;
+            border: none;
+            border-radius: 1.9rem;
+            border: solid $font-color-dark 2px;
+            padding: .8rem 1rem;
+            font-weight: 700;
+            font-size: 1.5em;
+            opacity: .30;
         
+        }
+        .btn-prev {
+            left: .3rem;
+        }
+        .btn-next {
+            right: .3rem;
+        }
+        .btn:hover {
+            opacity: .8;
+            cursor: pointer;
+            background-color: $font-color-dark;
+            color: $color-light;
+        }
     }
     .product-details {
         font-family: $ff-header;
