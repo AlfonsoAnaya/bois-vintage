@@ -229,7 +229,7 @@ header {
             color: $font-color-dark;
             background-color: $color-light;
             position: absolute;
-            top: 89%;
+            top: 86%;
             border: none;
             border-radius: 1.9rem;
             border: solid $font-color-dark 2px;
@@ -240,7 +240,7 @@ header {
 
             @media (min-width: 800px) {
                 padding: .8rem 1rem;
-                top: 87%;
+                top: 88%;
             }
         }
 
@@ -322,7 +322,6 @@ footer {
             margin: 0;
             line-height: .7;
             left: -20px;
-            border: solid coral;
         }
 
         .subtitle {
