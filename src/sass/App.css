@@ -21,20 +21,32 @@ img {
 }
 
 header {
+  padding: 3.5rem 2rem 0.75rem 2rem;
+  margin-bottom: 3rem;
   background-color: rgb(152, 188, 152);
-  margin: 0;
-  padding: 2.5rem 2rem 0.75rem 2rem;
   color: rgb(240, 238, 238);
   font-family: "Comfortaa", cursive;
   text-transform: uppercase;
-  margin: 0 auto;
   display: grid;
   justify-content: center;
-  justify-content: center;
-  grid-template-columns: minmax(100px, 200px) minmax(400px, 70%) minmax(100px, 200px);
-  gap: 0.5rem;
   align-items: end;
-  margin-bottom: 3rem;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 55% 45%;
+  grid-template-areas: "title title" "contact insta";
+}
+@media (min-width: 820px) {
+  header {
+    padding: 2.5rem 2rem 0.75rem 2rem;
+    margin-bottom: 3rem;
+    grid-template-columns: minmax(100px, 200px) minmax(400px, 70%) minmax(100px, 200px);
+    grid-template-rows: 100%;
+    gap: 0.5rem;
+    align-items: end;
+    grid-template-areas: "contact title insta";
+  }
+}
+header .title {
+  grid-area: title;
 }
 header h1 {
   font-size: 8rem;
@@ -50,12 +62,13 @@ header .subtitle {
   text-align: center;
 }
 header .container-contact {
+  grid-area: contact;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
   font-size: 1.1rem;
-  margin: 0 auto;
   display: grid;
   justify-content: center;
+  margin: 0 auto;
   min-height: 4rem;
   grid-template-columns: minmax(2.75rem, 25%) 75%;
   grid-template-rows: 40% 30% 30%;
@@ -76,7 +89,8 @@ header .container-contact .phone2 {
   grid-area: phone2;
 }
 header .container-insta {
-  text-align: right;
+  text-align: center;
+  grid-area: insta;
 }
 header .container-insta .icon-insta {
   width: 3.25rem;
@@ -100,9 +114,9 @@ header .icon .insta-background {
 }
 
 .products-grid {
-  margin: 0 auto;
   display: grid;
   justify-content: center;
+  margin: 0 auto;
   max-width: 1200px;
   width: 90%;
   grid-template-columns: repeat(auto-fit, minmax(250px, 350px));

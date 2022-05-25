@@ -59,7 +59,7 @@ function Header() {
                 <span className="phone1">55-3774-6078</span>
                 <span className="phone2">55-1030-4245</span>
             </div>
-            <Link className="link" to="/">
+            <Link className="link title" to="/">
                 <div className="grid-element">
                     <h1>Bois</h1>
                     <p className="subtitle">vintage furniture</p>

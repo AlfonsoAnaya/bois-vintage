@@ -6,7 +6,6 @@ $ff-header: 'Comfortaa', cursive;
 $ff-text: Helvetica, sans-serif;
 
 @mixin grid() {
-    margin: 0 auto;
     display: grid;
     justify-content: center;
 }
@@ -46,18 +45,33 @@ img {
 }
 
 header {
+    padding: 3.5rem 2rem .75rem 2rem;
+    margin-bottom: 3rem;
     background-color: $color-primary;
-    margin: 0;
-    padding: 2.5rem 2rem .75rem 2rem;
     color: $color-light;
     font-family: 'Comfortaa', cursive;
     text-transform: uppercase;
     @include grid();
-    justify-content: center;
-    grid-template-columns: minmax(100px, 200px) minmax(400px, 70%) minmax(100px, 200px);
-    gap: .5rem;
     align-items: end;
-    margin-bottom: 3rem;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 55% 45%;
+    grid-template-areas:
+        "title title"
+        "contact insta";
+
+    @media (min-width: 820px) {
+        padding: 2.5rem 2rem .75rem 2rem;
+        margin-bottom: 3rem;
+        grid-template-columns: minmax(100px, 200px) minmax(400px, 70%) minmax(100px, 200px);
+        grid-template-rows: 100%;
+        gap: .5rem;
+        align-items: end;
+        grid-template-areas: "contact title insta";
+    }
+
+    .title {
+        grid-area: title;
+    }
 
     h1 {
         font-size: 8rem;
@@ -76,10 +90,12 @@ header {
     }
 
     .container-contact {
+        grid-area: contact;
         font-family: $ff-text;
         font-weight: 300;
         font-size: 1.1rem;
         @include grid();
+        margin: 0 auto;
         min-height: 4rem;
         grid-template-columns: minmax(2.75rem, 25%) 75%;
         grid-template-rows: 40% 30% 30%;
@@ -108,7 +124,8 @@ header {
     }
 
     .container-insta {
-        text-align: right;
+        text-align: center;
+        grid-area: insta;
 
         .icon-insta {
             width: 3.25rem;
@@ -144,6 +161,7 @@ header {
 
 .products-grid {
     @include grid();
+    margin: 0 auto;
     max-width: 1200px;
     width: 90%;
     grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
