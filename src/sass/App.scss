@@ -1,7 +1,7 @@
 $color-primary: rgb(152, 188, 152);
 $color-overlay: rgb(152, 188, 152, .6);
 $color-light: rgb(240, 238, 238);
-$font-color-dark: #404a3f;
+$color-dark: #404a3f;
 $ff-header: 'Comfortaa', cursive;
 $ff-text: Helvetica, sans-serif;
 
@@ -34,7 +34,7 @@ html {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    color: $font-color-dark;
+    color: $color-dark;
     background-color: $color-light;
     font-family: $ff-text;
 }
@@ -221,64 +221,97 @@ header {
     max-width: 1050px;
     width: 88%;
 
-
     @media (min-width: 800px) {
         @include flex-row;
     }
 
     .gallery {
         width: 100%;
-        min-width: 350px;
-        position: relative;
-        align-self: center;
-
         @media (min-width: 800px) {
             width: 65%
         }
-
-        img {
+        .gallery-imgs {
             width: 100%;
-            border-radius: 4px;
+            min-width: 350px;
+            position: relative;
+            align-self: center;
+
+            img {
+                width: 100%;
+                border-radius: 4px;
+            }
+
+            .btn {
+                font-family: $ff-header;
+                text-align: center;
+                color: $color-dark;
+                background-color: $color-light;
+                position: absolute;
+                top: 86%;
+                border: none;
+                border-radius: 1.9rem;
+                border: solid $color-dark 2px;
+                padding: .4rem .6rem;
+                font-weight: 700;
+                font-size: 1.5em;
+                opacity: .30;
+
+                @media (min-width: 800px) {
+                    padding: .8rem 1rem;
+                    top: 88%;
+                }
+            }
+
+            .btn-prev {
+                left: .3rem;
+            }
+
+            .btn-next {
+                right: .3rem;
+            }
+
+            .btn:hover {
+                opacity: .8;
+                cursor: pointer;
+                background-color: $color-dark;
+                color: $color-light;
+            }
+
         }
 
-        .btn {
-            font-family: $ff-header;
-            text-align: center;
-            color: $font-color-dark;
-            background-color: $color-light;
-            position: absolute;
-            top: 86%;
-            border: none;
-            border-radius: 1.9rem;
-            border: solid $font-color-dark 2px;
-            padding: .4rem .6rem;
-            font-weight: 700;
-            font-size: 1.5em;
-            opacity: .30;
-
+        .gallery-nav-container {
+            @include flex-row;
+            justify-content: center;
+            padding: 1.10rem 0 .25rem 0;
+            gap: 2rem;
             @media (min-width: 800px) {
-                padding: .8rem 1rem;
-                top: 88%;
+                gap: 1.75rem;
+            }
+        }
+
+        .gallery-nav-item {
+            background-color: $color-primary;
+            border-radius: 100%;
+            border: solid .15rem $color-light;
+            width: .95rem;
+            height: .95rem;
+            @media (min-width: 800px) {
+                width: .85rem;
+                height: .85rem;
             }
         }
 
 
 
-        .btn-prev {
-            left: .3rem;
-        }
-
-        .btn-next {
-            right: .3rem;
-        }
-
-        .btn:hover {
-            opacity: .8;
+        .gallery-nav-item:hover {
             cursor: pointer;
-            background-color: $font-color-dark;
-            color: $color-light;
+        }
+
+        .active {
+            background-color: $color-dark;
         }
     }
+
 
     .product-details {
         font-family: $ff-header;
@@ -424,7 +457,7 @@ footer {
     }
 
     a:hover {
-        color: $font-color-dark;
+        color: $color-dark;
         text-decoration: none;
     }
 }

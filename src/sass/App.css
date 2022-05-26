@@ -180,20 +180,23 @@ header .icon .insta-background {
 }
 .product-container .gallery {
   width: 100%;
-  min-width: 350px;
-  position: relative;
-  align-self: center;
 }
 @media (min-width: 800px) {
   .product-container .gallery {
     width: 65%;
   }
 }
-.product-container .gallery img {
+.product-container .gallery .gallery-imgs {
+  width: 100%;
+  min-width: 350px;
+  position: relative;
+  align-self: center;
+}
+.product-container .gallery .gallery-imgs img {
   width: 100%;
   border-radius: 4px;
 }
-.product-container .gallery .btn {
+.product-container .gallery .gallery-imgs .btn {
   font-family: "Comfortaa", cursive;
   text-align: center;
   color: #404a3f;
@@ -209,22 +212,54 @@ header .icon .insta-background {
   opacity: 0.3;
 }
 @media (min-width: 800px) {
-  .product-container .gallery .btn {
+  .product-container .gallery .gallery-imgs .btn {
     padding: 0.8rem 1rem;
     top: 88%;
   }
 }
-.product-container .gallery .btn-prev {
+.product-container .gallery .gallery-imgs .btn-prev {
   left: 0.3rem;
 }
-.product-container .gallery .btn-next {
+.product-container .gallery .gallery-imgs .btn-next {
   right: 0.3rem;
 }
-.product-container .gallery .btn:hover {
+.product-container .gallery .gallery-imgs .btn:hover {
   opacity: 0.8;
   cursor: pointer;
   background-color: #404a3f;
   color: rgb(240, 238, 238);
+}
+.product-container .gallery .gallery-nav-container {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  justify-content: center;
+  padding: 1.1rem 0 0.25rem 0;
+  gap: 2rem;
+}
+@media (min-width: 800px) {
+  .product-container .gallery .gallery-nav-container {
+    gap: 1.75rem;
+  }
+}
+.product-container .gallery .gallery-nav-item {
+  background-color: rgb(152, 188, 152);
+  border-radius: 100%;
+  border: solid 0.15rem rgb(240, 238, 238);
+  width: 0.95rem;
+  height: 0.95rem;
+}
+@media (min-width: 800px) {
+  .product-container .gallery .gallery-nav-item {
+    width: 0.85rem;
+    height: 0.85rem;
+  }
+}
+.product-container .gallery .gallery-nav-item:hover {
+  cursor: pointer;
+}
+.product-container .gallery .active {
+  background-color: #404a3f;
 }
 .product-container .product-details {
   font-family: "Comfortaa", cursive;
