@@ -121,6 +121,10 @@ header {
         .phone2 {
             grid-area: phone2;
         }
+
+        .icon-WA:hover .phone1 {
+            opacity: 1;
+        }
     }
 
     .container-insta {
@@ -129,15 +133,14 @@ header {
 
         .icon-insta {
             width: 3.25rem;
-
         }
 
         .icon-insta:hover .insta-background {
-            fill: $color-primary;
+            fill: $color-light;
         }
 
         .icon-insta:hover .insta-foreground {
-            fill: $color-light;
+            fill: $color-primary;
         }
 
         .icon-insta:hover {
@@ -148,12 +151,12 @@ header {
     .icon {
 
         .WA-foreground,
-        .insta-foreground {
+        .insta-background {
             fill: $color-primary;
         }
 
         .WA-background,
-        .insta-background {
+        .insta-foreground {
             fill: $color-light;
         }
     }

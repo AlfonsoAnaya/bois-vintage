@@ -88,6 +88,9 @@ header .container-contact .phone1 {
 header .container-contact .phone2 {
   grid-area: phone2;
 }
+header .container-contact .icon-WA:hover .phone1 {
+  opacity: 1;
+}
 header .container-insta {
   text-align: center;
   grid-area: insta;
@@ -96,20 +99,20 @@ header .container-insta .icon-insta {
   width: 3.25rem;
 }
 header .container-insta .icon-insta:hover .insta-background {
-  fill: rgb(152, 188, 152);
+  fill: rgb(240, 238, 238);
 }
 header .container-insta .icon-insta:hover .insta-foreground {
-  fill: rgb(240, 238, 238);
+  fill: rgb(152, 188, 152);
 }
 header .container-insta .icon-insta:hover {
   border-radius: 100%;
 }
 header .icon .WA-foreground,
-header .icon .insta-foreground {
+header .icon .insta-background {
   fill: rgb(152, 188, 152);
 }
 header .icon .WA-background,
-header .icon .insta-background {
+header .icon .insta-foreground {
   fill: rgb(240, 238, 238);
 }
 
