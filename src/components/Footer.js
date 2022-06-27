@@ -41,7 +41,7 @@ function Footer() {
                     </div>
                 </div>
             </div>
-            <p className="credits">Website by <a className="footer-link" rel="noreferrer" target="_blank" href="https://ubiquitous-frangipane-e02795.netlify.app/">Alfonso Anaya</a>
+            <p className="credits">Website by <a className="footer-link" rel="noreferrer" target="_blank" href="https://alfonsoanaya.netlify.app/">Alfonso Anaya</a>
             </p>
 
             <p className="credits">Icons by <a className="footer-link" rel="noreferrer" target="_blank" href="https://www.svgrepo.com/">svgrepo</a></p>
